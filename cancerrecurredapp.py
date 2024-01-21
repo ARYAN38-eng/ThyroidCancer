@@ -4,7 +4,7 @@ import numpy as np
 import pickle 
 ohe=pickle.load(open('ohecancer.pkl','rb'))
 rfc=pickle.load(open('rfccancer.pkl','rb'))
-df=pd.read_csv('Thyroid_diff.csv')
+df=pickle.load(open('Thyroid_Diff.pkl','rb'))
 st.title("Thyroid Cancer Recurred Prediction")
 st.sidebar.image("th.jpg", caption="Thyroid Cancer", use_column_width=True)
 description = """
